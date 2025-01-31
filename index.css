@@ -1,0 +1,175 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Typography & Icons */
+h1 {
+    color: #0f8cdf;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+i {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.fa-solid {
+    color: #999;
+}
+
+.liked {
+    color: red;
+}
+
+.retweeted {
+    color: limegreen;
+}
+
+/* Layout */
+main,
+header {
+    width: 290px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 2em auto;
+}
+
+/* Tweet Input Area */
+.tweet-input-area {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+/* Form Elements */
+textarea {
+    border: none;
+    resize: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 60px;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 30px;
+}
+
+button {
+    background-color: #1da1f2;
+    border: none;
+    color: white;
+    padding: 10px 19px;
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Tweet Section */
+.tweet {
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.tweet-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.tweet-details {
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.tweet-detail {
+    display: flex;
+    gap: 4px;
+}
+
+.handle-and-delete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.handle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.tweet-text {
+    width: 207px;
+    font-size: 1.4rem;
+    line-height: 20px;
+}
+
+/* Replies */
+.tweet-reply {
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+    margin: 10px 0 10px 40px;
+    width: 80%;
+}
+
+.tweet-reply-to-tweet {
+    border-top: 2px solid lightgray;
+    margin-top: 20px;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tweet-reply-input {
+    border: 1px solid #305ee6;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    width: 80%;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.tweet-reply-input::placeholder {
+    font-size: 1.2rem;
+}
+
+.replyBtn-to-tweet {
+    width: 80%;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+/* Images */
+.profile-pic {
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    width: 48px;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
